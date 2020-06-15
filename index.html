@@ -207,33 +207,11 @@
         </div>
     </div>
 
-
-    <!-- A different approach would be to make the whole staff information collapsible -->
-    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
-    <!-- Here a single card is used, but card columns could be used -->
-    <div class="container">
-        <h2>More information</h2>
-        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
-        <div id="mechanics" class="collapse">
-            <div class="card bg-warning" style="width:200px">
-                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Erwind</h4>
-                    <p class="card-text">Erwind knows all about bikes.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Collapsible with multiple items - accordion -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
-        <div class="container-md p-3 my-3 border bg-warning text-white">
-            <h1>Erwind's and friends bike shop</h1>
-            <p>Bike fixing is our business</p>
-        </div>
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
@@ -241,7 +219,12 @@
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Here is our list of services</p>
+                        <p>Men's Haircut</p>
+                        <p>Women's Haircut</p>
+                        <p>Shampoo & Blow-Dry</p>
+                        <p>Partial Highlights</p>
+                        <p>Full Highlights</p>
+                        <p>Men's Highlights</p>
                     </div>
                 </div>
             <div class="card">
@@ -268,8 +251,24 @@
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" id="example-text-input" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                            <div class="col-10">
+                                <input class="form-control" type="email" id="example-email-input" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                            <div class="col-10">
+                                <input class="form-control" type="tel" id="example-tel-input" placeholder="Phone Number">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
