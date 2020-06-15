@@ -3,13 +3,13 @@
 */
 h1 {
    font-family: "Times New Roman", Times, serif;
-   text-shadow: 3px 3px 1px black;
+   text-shadow: 3px 3px 1px white;
    padding-top: 46px;
-   color: black;
+   color: grey;
 }
 h2 {
    font-family: "Times New Roman", Times, serif;
    text-shadow: 0px 0px 0px black;
-   color: grey;
+   color: black;
    size: 20px;
 }
