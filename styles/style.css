@@ -8,8 +8,13 @@ h1 {
    /*padding-bottom: 30px;*/
 }
 h2 {
-     font-family: "Times New Roman", Times, serif;
-     text-shadow: 3px 3px 1px grey;
-     color: grey;
-     size: 20px;
+   font-family: "Times New Roman", Times, serif;
+   text-shadow: 3px 3px 1px grey;
+   color: grey;
+   size: 20px;
+}
+navStyle{
+   border: 5px outset black;
+   background-color: lightblue;
+   text-align: center
 }
