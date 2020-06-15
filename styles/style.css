@@ -1,17 +1,7 @@
 /* Style sheet
    color picker www.w3schools.com/colors/colors_picker.asp
 */
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
-}
-
-.header h1 {
+h1 {
    font-family: "Times New Roman", Times, serif;
    text-shadow: 3px 3px 1px black;
-   position: relative;
-   top: 18px;
-   left: 10px;
 }
