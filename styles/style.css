@@ -5,5 +5,7 @@ h1 {
    font-family: "Times New Roman", Times, serif;
    text-shadow: 3px 3px 1px black;
    padding-top: 46px;
+   padding-right: 10px;
    padding-bottom: 46px;
+   padding-left: 10px;
 }
