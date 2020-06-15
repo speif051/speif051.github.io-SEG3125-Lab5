@@ -5,11 +5,10 @@ h1 {
    font-family: "Times New Roman", Times, serif;
    text-shadow: 3px 3px 1px black;
    padding-top: 46px;
-   /*padding-bottom: 30px;*/
+   padding-left: 200px;
 }
 h2 {
    font-family: "Times New Roman", Times, serif;
-   text-shadow: 3px 3px 1px grey;
    color: grey;
    size: 20px;
 }
