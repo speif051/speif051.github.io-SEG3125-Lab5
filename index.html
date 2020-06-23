@@ -24,7 +24,6 @@
     
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script src="scripts/validation.js"></script> 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -230,21 +229,29 @@
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <input class="form-control" type="text" id="FullName" placeholder="Full Name">
+                        <form action="/action_page.php" class="was-validated">
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <input class="form-control" type="text" id="FullName" placeholder="Full Name">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <input class="form-control" type="email" id="email" placeholder="Email">
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <input class="form-control" type="email" id="email" placeholder="Email">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <input class="form-control" type="text" id="phone" placeholder="Phone Number" onchange="validatePhoneHelper(this.id)">
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <input class="form-control" type="text" id="phone" placeholder="Phone Number">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -254,29 +261,31 @@
                 </div>
                 <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <p>Credit Card Number: <input class="form-control" type="text" id="CreditCard" placeholder="XXXX XXXX XXXX XXXX" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
+                        <form action="/action_page.php" class="was-validated">
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <p>Credit Card Number: <input class="form-control" type="text" id="CreditCard" placeholder="XXXX XXXX XXXX XXXX" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <p>Expiration Date: <input class="form-control" type="text" id="Expiration" placeholder="MM/YY"></p>
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <p>Expiration Date: <input class="form-control" type="text" id="Expiration" placeholder="MM/YY"></p>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-10">
-                                <p>CSV: <input class="form-control" type="text" id="CSV" placeholder="123"></p>
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <p>CSV: <input class="form-control" type="text" id="CSV" placeholder="123"></p>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
                             </div>
+                            <button type="button" class="btn btn-primary">Submit</button>
                         </div>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
