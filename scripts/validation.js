@@ -7,10 +7,9 @@
 // or numbers 
 function validatePhone(txtPhone) {
     var a = document.getElementById(phone).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
-    // of digits
-    var filter = /^\d{10}$/;
-    if (filter.test(a)) {
+    
+    var filter = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
+    if (filter.test(a)){
         return true;
     }
     else {
