@@ -6,10 +6,10 @@
 // Regular expressions can get complex, you can think in terms of a series of characters
 // or numbers 
 function validatePhone(txtPhone) {
-    var a = document.getElementById(txtPhone).value;
+    var a = document.getElementById(phone).value;
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
     // of digits
-    var filter = /^(\([-+]?[0-9]+)\)$/;
+    var filter = /^\d{10}$/;
     if (filter.test(a)) {
         return true;
     }
