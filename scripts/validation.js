@@ -12,7 +12,7 @@ function validatePhone(txtPhone) {
 }
 
 function validateHelper(type){
-    if type=="phone{
+    if (type=="phone"){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
             $("#phone").val("(xxxx)");
