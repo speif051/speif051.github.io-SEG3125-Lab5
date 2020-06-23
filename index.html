@@ -49,16 +49,16 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#first">Services</a>
+                <a class="nav-link" href="#Services">Services</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#second">Hairdressers</a>
+                <a class="nav-link" href="#Hairdressers">Hairdressers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#third">Book an Appointment</a>
+                <a class="nav-link" href="#Book an Appointment">Book an Appointment</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="#third">Where to Find us</a>
+                <a class="nav-link" href="#Where to Find us">Where to Find us</a>
               </li>
            </ul>
           </div>  
@@ -67,8 +67,8 @@
     
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
-    <div class="container">
-        <h2>Service description</h2>
+    <div class="container" id="Services">
+        <h2>Services</h2>
         <p>Here is a list of services offered</p>            
         <table class="table table-hover">
             <thead>
@@ -107,8 +107,8 @@
     <!-- Card columns allows multiple cards next to each other -->
     <!-- The first card's button doesn't go anywhere, it could be a modal --> 
     <!-- My second card limits the information seen and uses collapsible to show more -->
-    <div class="container p-3">
-        <h2>Meet our hairdressers</h2>
+    <div class="container p-3" id="Hairdressers">
+        <h2>Hairdressers</h2>
         <div class="card-columns">
             <div class="card bg-warning" style="width:200px">
                 <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
@@ -138,9 +138,9 @@
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
-    <div class="container">
+    <div class="container" id="Book an Appointment">
         <div class="container-md p-3 my-3 border bg-light text-white">
-            <h1>Book Your Next Appointment</h1>
+            <h1>Book an Appointment</h1>
         </div>
         <div id="accordion">
             <div class="card">
@@ -264,7 +264,7 @@
         </div>
     </div>
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <div class="container-md p-3 my-3 border bg-light text-success">
+    <div class="container-md p-3 my-3 border bg-light text-success" id="Where to Find ys">
         <h3>Location</h3>
         <img src="images/location.jpg" class="float-left" alt="map_view_location" width="100" height="100">
         <p color="red">75 Laurier Ave E</p>
